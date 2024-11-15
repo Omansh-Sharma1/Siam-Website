@@ -25,7 +25,6 @@ export default function Contact() {
 
   return (
     <div className="relative min-h-screen w-full bg-black text-white overflow-hidden">
-      
       <div className="flex items-center justify-center relative w-full h-screen bg-gradient-to-b from-black to-transparent">
         <div className="absolute inset-0 z-0 bg-cover bg-center fixed-bg"></div>
 
@@ -35,7 +34,7 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 1 }}
         >
-          <h1 className="text-8xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
+          <h1 className="text-8xl font-roboto text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
             Contact Us
           </h1>
         </motion.div>
@@ -51,8 +50,8 @@ export default function Contact() {
             transition={{ duration: 1 }}
           >
             <div className="w-full p-6 bg-gray-800 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold text-white text-center">Get in Touch</h3>
-              <p className="text-white mt-4 text-center font-light">
+              <h3 className="text-2xl font-roboto text-white text-center">Get in Touch</h3>
+              <p className="text-white mt-4 text-center font-playfair">
                 Fill in the form below and we will get back to you as soon as possible.
               </p>
 
@@ -127,8 +126,8 @@ export default function Contact() {
             transition={{ duration: 1 }}
           >
             <div className="w-full p-6 bg-gray-800 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold text-white text-center">Contact Info</h3>
-              <p className="text-white mt-4 text-center font-light">
+              <h3 className="text-2xl font-roboto text-white text-center">Contact Info</h3>
+              <p className="text-white mt-4 text-center font-playfair">
                 Reach us via the contact form or through the following details.
               </p>
             </div>
@@ -137,7 +136,7 @@ export default function Contact() {
 
         {/* Map Section or Additional Content */}
         <section className="w-full max-w-6xl mt-16">
-          <h2 className="text-3xl font-semibold text-pink-400 mb-6">Our Location</h2>
+          <h2 className="text-3xl font-roboto text-pink-400 mb-6">Our Location</h2>
           <div className="text-lg text-gray-300 text-center space-y-4">
             <p>1234 Some Street, City, Country</p>
             <p>Email: contact@company.com</p>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { CardSpotlight } from '../ui/card-spotlight';
-import FocusCards from '../ui/focus-cards'; // Importing FocusCards component
+import FocusCards from '../ui/focus-cards';
 
 export default function About() {
   const cardControls = useAnimation();
@@ -53,17 +53,16 @@ export default function About() {
 
   return (
     <div className="relative min-h-screen w-full bg-black text-white overflow-hidden">
-      
       <div className="flex items-center justify-center relative w-full h-screen bg-gradient-to-b from-black to-transparent">
         <div className="absolute inset-0 z-0 bg-cover bg-center fixed-bg"></div>
-        
+
         <motion.div 
           className="text-center space-y-8 z-10 px-4"
           initial={{ opacity: 0, y: -100 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 1 }}
         >
-          <h1 className="text-8xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
+          <h1 className="text-8xl font-roboto text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
             About Us
           </h1>
           <motion.div 
@@ -81,7 +80,6 @@ export default function About() {
       </div>
 
       <div id="about-content" className="relative z-10 px-8 py-16 space-y-12">
-        
         <section className="flex justify-between space-x-8 mt-16">
           <motion.div
             className="flex-1 opacity-0 transform translate-x-20"
@@ -91,8 +89,8 @@ export default function About() {
           >
             <CardSpotlight className="w-full h-full p-6">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold text-white text-center">What is SIAM?</h3>
-                <p className="text-white mt-4 text-center font-light">
+                <h3 className="text-2xl font-playfair text-white text-center">What is SIAM?</h3>
+                <p className="text-white mt-4 text-center font-playfair font-light">
                   SIAM is a global organization that promotes the development of applied mathematics and computational science across various industries.
                 </p>
               </div>
@@ -115,15 +113,15 @@ export default function About() {
           >
             <CardSpotlight className="w-full h-full p-6">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold text-white text-center">SIAM-JUIT Chapter</h3>
-                <p className="text-white mt-4 text-center font-light">
+                <h3 className="text-2xl font-playfair text-white text-center">SIAM-JUIT Chapter</h3>
+                <p className="text-white mt-4 text-center font-playfair font-light">
                   The SIAM-JUIT Student Chapter fosters an environment for students to explore applied mathematics through workshops, research, and industry collaborations.
                 </p>
               </div>
             </CardSpotlight>
           </motion.div>
         </section>
-        
+
         {/* Scroll Icon Below CardSpotlight Section */}
         <motion.div 
           id="scroll-btn" 
@@ -142,60 +140,45 @@ export default function About() {
 
         {/* Updated Our Mission Section with Scroll Animation */}
         <section 
-  id="mission-section" 
-  className="w-full bg-black-100 py-24 px-8 flex flex-col items-center justify-center space-y-16"
-  style={{ minHeight: '100vh', height: '100vh' }} // Added inline style to force full height
->
-  <motion.div
-    className="max-w-7xl w-full text-center space-y-4"
-    initial={{ opacity: 0, y: 50 }}
-    animate={missionControls}
-    transition={{ duration: 1 }}
-  >
-    <h2 className="text-4xl font-semibold text-black-500 mb-4" style={{ fontFamily: 'sans-serif' }}>
-      Our Mission
-    </h2>
-    <p className="text-black-700 text-lg leading-relaxed" style={{ fontFamily: 'Helvetica, sans-serif' }}>
-      The SIAM-JUIT Student Chapter aims to inspire students to explore applied mathematics, engage in interdisciplinary research, and connect with professionals in the field. 
-      We strive to foster a community of aspiring mathematicians and scientists eager to make an impact in engineering and technology.
-    </p>
-  </motion.div>
+          id="mission-section" 
+          className="w-full bg-black-100 py-24 px-8 flex flex-col items-center justify-center space-y-16"
+          style={{ minHeight: '100vh', height: '100vh' }} 
+        >
+          <motion.div
+            className="max-w-7xl w-full text-center space-y-4"
+            initial={{ opacity: 0, y: 50 }}
+            animate={missionControls}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="text-4xl font-playfair text-black-500 mb-4">
+              Our Mission
+            </h2>
+            <p className="text-black-700 text-lg leading-relaxed font-playfair">
+              The SIAM-JUIT Student Chapter aims to inspire students to explore applied mathematics, engage in interdisciplinary research, and connect with professionals in the field. 
+              We strive to foster a community of aspiring mathematicians and scientists eager to make an impact in engineering and technology.
+            </p>
+          </motion.div>
 
-  {/* Focus Cards Section with Animation */}
-  <motion.div
-    className="flex justify-center w-full space-x-8"
-    initial={{ opacity: 0, y: 50 }}
-    animate={focusCardControls}
-    transition={{ duration: 1 }}
-  >
-    <FocusCards cards={cards} />
-  </motion.div>
-</section>
+          {/* Focus Cards Section with Animation */}
+          <motion.div
+            className="flex justify-center w-full space-x-8"
+            initial={{ opacity: 0, y: 50 }}
+            animate={focusCardControls}
+            transition={{ duration: 1 }}
+          >
+            <FocusCards cards={cards} />
+          </motion.div>
+        </section>
 
-{/* Other Content Sections */}
-<section className="w-full max-w-6xl mt-16">
-  <h2 className="text-3xl font-semibold text-pink-400 mb-6">Why Join SIAM?</h2>
-  <ul className="list-disc list-inside text-gray-400 space-y-4">
-    <li>Access to cutting-edge research and developments in applied mathematics.</li>
-    <li>Opportunities for professional growth through industry collaborations.</li>
-    <li>Attend workshops, seminars, and conferences with leaders in the field.</li>
-    <li>Network with like-minded peers and professionals in academia and industry.</li>
-  </ul>
-</section>
-
-<section className="w-full max-w-6xl mt-16">
-  <h2 className="text-3xl font-semibold text-pink-400 mb-6">Latest Announcements</h2>
-  <div className="bg-gray-800 p-6 rounded-lg">
-    <h3 className="text-2xl font-semibold text-white">Upcoming Workshop: Applied Data Science</h3>
-    <p className="text-gray-400 mt-2">
-      Join us for a hands-on workshop on Applied Data Science, featuring experts from academia and the industry. Don't miss out on the chance to enhance your skills in this rapidly growing field!
-    </p>
-    <button className="mt-4 bg-pink-500 hover:bg-pink-400 text-white px-6 py-3 rounded-md text-lg">
-      Register Now
-    </button>
-  </div>
-</section>
-
+        {/* Other Content Sections */}
+        <section className="w-full max-w-6xl mt-16">
+          <h2 className="text-3xl font-playfair text-pink-400 mb-6">Why Join SIAM?</h2>
+          <ul className="list-disc list-inside text-gray-300">
+            <li>Enhance your technical skills through workshops and seminars.</li>
+            <li>Collaborate with peers and professionals in applied mathematics.</li>
+            <li>Engage in research and industry opportunities.</li>
+          </ul>
+        </section>
       </div>
     </div>
   );

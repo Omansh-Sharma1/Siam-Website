@@ -1,3 +1,9 @@
+/* Add this to your index.css or App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+/* Tailwind base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: black; /* Black background for the entire body */
+  font-family: 'Roboto', sans-serif; /* Set Roboto as the default font */
 }
 
 /* Ensure black background fills the full screen */
@@ -24,20 +32,6 @@ body {
   bottom: 0;
   background-color: black;
   z-index: -1; /* Set z-index to -1 to ensure the background is behind other content */
-}
-
-/* Global Reset */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%; /* Ensure full height */
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: black; /* Black background for the entire body */
 }
 
 /* Smooth scrolling behavior */
@@ -62,4 +56,9 @@ footer {
   position: relative;
   padding: 16px;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Override specific font for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* Set Poppins for headings */
 }

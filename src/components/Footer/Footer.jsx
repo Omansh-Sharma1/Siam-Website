@@ -15,8 +15,8 @@ export default function Footer() {
             />
           </div>
           <div className="text-center md:text-right text-sm text-gray-400">
-            <p>
-              © 2023 <Link to="/" className="hover:underline">hiteshchoudhary</Link> - All Rights Reserved.
+            <p className="font-playfair">
+              © 2023 <Link to="/" className="hover:underline font-roboto">hiteshchoudhary</Link> - All Rights Reserved.
             </p>
           </div>
         </div>
@@ -25,8 +25,8 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mb-8">
           {/* Resources */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Resources</h3>
-            <ul className="space-y-4 text-gray-300">
+            <h3 className="text-lg font-roboto font-semibold text-white mb-4">Resources</h3>
+            <ul className="space-y-4 text-gray-300 font-playfair">
               <li>
                 <Link to="/" className="hover:text-yellow-400 transition duration-300">Home</Link>
               </li>
@@ -41,8 +41,8 @@ export default function Footer() {
 
           {/* Follow Us */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
-            <ul className="space-y-4 text-gray-300">
+            <h3 className="text-lg font-roboto font-semibold text-white mb-4">Follow Us</h3>
+            <ul className="space-y-4 text-gray-300 font-playfair">
               <li>
                 <a
                   href="https://github.com/hiteshchoudhary"
@@ -64,8 +64,8 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Legal</h3>
-            <ul className="space-y-4 text-gray-300">
+            <h3 className="text-lg font-roboto font-semibold text-white mb-4">Legal</h3>
+            <ul className="space-y-4 text-gray-300 font-playfair">
               <li>
                 <Link to="#" className="hover:text-yellow-400 transition duration-300">Privacy Policy</Link>
               </li>
@@ -83,6 +83,7 @@ export default function Footer() {
             className="text-gray-400 hover:text-yellow-400 transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Facebook"
           >
             <svg className="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 19">
               <path
@@ -97,6 +98,7 @@ export default function Footer() {
             className="text-gray-400 hover:text-yellow-400 transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Github"
           >
             <svg className="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 16">
               <path
@@ -109,11 +111,13 @@ export default function Footer() {
             className="text-gray-400 hover:text-yellow-400 transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter"
           >
             <svg className="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17">
               <path
                 fillRule="evenodd"
-                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .11.87A11.65 11.65 0 0 1 1.39 1.04a4.04 4.04 0 0 0-.55 2.03 4.057 4.057 0 0 0 1.808-.34c-.178.578-.377 1.08-.535 1.44 0 .199-.062.38-.148.56-.274.472-.626.909-1.063 1.29A4.115 4.115 0 0 0 0 10.497a4.117 4.117 0 0 0 4.118 4.138c-2.88 2.365-4.8 4.544-4.736 6.325.036.92.686 2.233 1.86 3.25 2.47-1.352 3.96-2.918 5.202-4.76 1.397.837 2.859 1.68 4.277 2.453 4.083 2.667 6.594 4.22 10.054-1.748-1.01-.35-1.734-.97-2.473-1.66a10.46 10.46 0 0 0 1.58-.92A8.125"
+                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .11.87A11.65 11.65 0 0 1 1.39 1.04a4.04 4.04 0 0 0-.55 2.03 4.057 4.057 0 0 0 1.808-.34c-.178.578-.377 1.08-.535 1.44 0 .199-.062.38-.148.56-.274.472-.626.909-1.063 1.29A4.115 4.115 0 0 0 0 10.497a4.117 4.117 0 0 0 4.118 4.138c-2.88 2.365-4.8 4.564-4.8 7.168 0 .271.248.475.543.475 2.476 0 4.992-1.396 7.398-3.05 2.58 1.187 5.573 1.008 7.98-1.128a11.378 11.378 0 0 0 1.612-2.79c-.303-.11-.585-.275-.883-.439-.212.233-.476.5-.794.768 1.242-.035 2.326-.528 3.014-1.525A4.084 4.084 0 0 0 20 1.892z"
+                clipRule="evenodd"
               />
             </svg>
           </a>

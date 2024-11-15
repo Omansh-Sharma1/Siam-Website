@@ -1,0 +1,17 @@
+/* Header.css */
+
+/* Apply Playfair Display to text content */
+body, .text-content, .text-gray-300 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Apply Roboto to all headings */
+  h1, h2, h3, h4, h5, h6, .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Ensure the navigation bar font is unchanged or use specific font-sans for nav links */
+  .nav-links {
+    font-family: 'Roboto', sans-serif;
+  }
+  
